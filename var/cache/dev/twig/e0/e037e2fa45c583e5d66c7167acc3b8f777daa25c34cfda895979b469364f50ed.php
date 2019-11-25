@@ -63,7 +63,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
 
         // line 6
-        echo "    <nav class=\"navbar navbar-light bg-light\">
+        echo "    <nav class=\"navbar navbar-light bg-primary\">
         <a class=\"navbar-brand\" href=\"/\">Navbar</a>
     </nav>
 ";
@@ -92,7 +92,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
 #}
 
 {% block header %}
-    <nav class=\"navbar navbar-light bg-light\">
+    <nav class=\"navbar navbar-light bg-primary\">
         <a class=\"navbar-brand\" href=\"/\">Navbar</a>
     </nav>
 {% endblock %}

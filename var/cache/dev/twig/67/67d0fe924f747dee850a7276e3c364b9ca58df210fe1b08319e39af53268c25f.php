@@ -44,7 +44,7 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
 <html lang=\"en\">
 <head>
     <meta charset=\"UTF-8\">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
 <h1>";
@@ -83,7 +83,7 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
 <html lang=\"en\">
 <head>
     <meta charset=\"UTF-8\">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
 <h1>{{ website }} index</h1>
