@@ -50,12 +50,12 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
         <a href=\"";
         // line 8
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_show", ["slug" => "ma-superbe-serie"]);
-        echo "\">Voici la série Ma Superbe Série.</a>
+        echo "\">Afficher : Ma Superbe Série.</a>
         <br>
         <a href=\"";
         // line 10
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_show", ["slug" => "house-of-cards"]);
-        echo "\">Voici la série House of Cards.</a>
+        echo "\">Afficher : House of Cards.</a>
         <h1>";
         // line 11
         echo twig_escape_filter($this->env, (isset($context["slug"]) || array_key_exists("slug", $context) ? $context["slug"] : (function () { throw new RuntimeError('Variable "slug" does not exist.', 11, $this->source); })()), "html", null, true);
@@ -95,9 +95,9 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
     <title>Show Slug</title>
 </head>
     <body>
-        <a href=\"{{ path('wild_show', {'slug':'ma-superbe-serie'}) }}\">Voici la série Ma Superbe Série.</a>
+        <a href=\"{{ path('wild_show', {'slug':'ma-superbe-serie'}) }}\">Afficher : Ma Superbe Série.</a>
         <br>
-        <a href=\"{{ path('wild_show', {'slug':'house-of-cards'}) }}\">Voici la série House of Cards.</a>
+        <a href=\"{{ path('wild_show', {'slug':'house-of-cards'}) }}\">Afficher : House of Cards.</a>
         <h1>{{ slug }}.</h1>
     </body>
 </html>

@@ -87,3 +87,13 @@ dd8f3f,127.0.0.1,GET,http://localhost:8000/wild/show,1574716755,,200
 416a1e,127.0.0.1,GET,http://localhost:8000/%20wild/show/MaSerie,1574716860,,404
 ebd7a2,127.0.0.1,GET,http://localhost:8000/wild/show/MaSerie,1574716873,39ae55,200
 39ae55,127.0.0.1,GET,http://localhost:8000/wild/show/MaSerie,1574716873,,404
+02bb05,127.0.0.1,GET,http://localhost:8000/,1574762315,,200
+4a12f8,127.0.0.1,GET,http://localhost:8000/index.php/,1574762329,,200
+6a8dcc,127.0.0.1,GET,http://localhost:8000/show,1574762358,7a14c1,200
+7a14c1,127.0.0.1,GET,http://localhost:8000/show,1574762358,,404
+8a5e5e,127.0.0.1,GET,http://localhost:8000/wild/show,1574762369,,200
+60d322,127.0.0.1,GET,http://localhost:8000/wild/show/ma-superbe-serie,1574762371,,200
+ea069d,127.0.0.1,GET,http://localhost:8000/wild/show/house-of-cards,1574762372,,200
+f49d9c,127.0.0.1,GET,http://localhost:8000/wild/show/ma-superbe-serie,1574762383,,200
+8f4624,127.0.0.1,GET,http://localhost:8000/wild/show/house-of-cards,1574762385,,200
+ee0b68,127.0.0.1,GET,http://localhost:8000/wild/show/ma-superbe-serie,1574762386,,200
