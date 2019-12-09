@@ -68,13 +68,20 @@ class __TwigTemplate_78378246f5e5be6e79581a5c3e1813438c3509a2a2d66729096874139e1
         echo "    <h1>Bienvenue sur Wild Series!</h1>
     <a href=\"";
         // line 5
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_index");
+        echo "\">
+        Cliquer ici pour voir la liste des programmes.
+    </a>
+    <br>
+    <a href=\"";
+        // line 9
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_show", ["slug" => "walking-dead"]);
         echo "\">
         Testing show() method from WildController with a real program s slug.
     </a>
     <br>
     <a href=\"";
-        // line 9
+        // line 13
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_index");
         echo "\">
         Testing index() method from WildController to view all programs.
@@ -100,7 +107,7 @@ class __TwigTemplate_78378246f5e5be6e79581a5c3e1813438c3509a2a2d66729096874139e1
 
     public function getDebugInfo()
     {
-        return array (  78 => 9,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  85 => 13,  78 => 9,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -109,6 +116,10 @@ class __TwigTemplate_78378246f5e5be6e79581a5c3e1813438c3509a2a2d66729096874139e1
 
 {% block body %}
     <h1>Bienvenue sur Wild Series!</h1>
+    <a href=\"{{ path('wild_index') }}\">
+        Cliquer ici pour voir la liste des programmes.
+    </a>
+    <br>
     <a href=\"{{ path('wild_show', { 'slug': \"walking-dead\" }) }}\">
         Testing show() method from WildController with a real program s slug.
     </a>
@@ -116,6 +127,7 @@ class __TwigTemplate_78378246f5e5be6e79581a5c3e1813438c3509a2a2d66729096874139e1
     <a href=\"{{ path('wild_index') }}\">
         Testing index() method from WildController to view all programs.
     </a>
-{% endblock %}", "home.html.twig", "/home/sebastien/Documents/Wild_Code_School/Exercices/Symfony_quete/wild-series/templates/home.html.twig");
+{% endblock %}
+", "home.html.twig", "/home/sebastien/Documents/Wild_Code_School/Exercices/Symfony_quete/wild-series/templates/home.html.twig");
     }
 }

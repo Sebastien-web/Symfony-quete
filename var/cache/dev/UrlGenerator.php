@@ -17,6 +17,8 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'app_index' => [[], ['_controller' => 'App\\Controller\\DefaultController::index'], [], [['text', '/']], [], []],
     'wild_index' => [[], ['_controller' => 'App\\Controller\\WildController::index'], [], [['text', '/wild']], [], []],
-    'wild_show' => [['slug'], ['slug' => null, '_controller' => 'App\\Controller\\WildController::show'], ['slug' => '[a-z0-9-]+'], [['variable', '/', '[a-z0-9-]+', 'slug', true], ['text', '/wild/show']], [], []],
+    'wild_show' => [['slug'], ['slug' => null, '_controller' => 'App\\Controller\\WildController::show'], ['slug' => '[a-z0-9-]+'], [['variable', '/', '[a-z0-9-]+', 'slug', true], ['text', '/wild/series']], [], []],
+    'wild_show_program' => [['programName'], ['programName' => null, '_controller' => 'App\\Controller\\WildController::showByProgram'], [], [['variable', '/', '[^/]++', 'programName', true], ['text', '/wild/program']], [], []],
     'wild_show_category' => [['categoryName'], ['categoryName' => null, '_controller' => 'App\\Controller\\WildController::showByCategory'], ['categoryName' => '[a-z0-9-]+'], [['variable', '/', '[a-z0-9-]+', 'categoryName', true], ['text', '/wild/category']], [], []],
+    'wild_show_season' => [['seasonId'], ['id' => null, '_controller' => 'App\\Controller\\WildController::showBySeason'], ['seasonId' => '[0-9]+'], [['variable', '/', '[0-9]+', 'seasonId', true], ['text', '/wild/season']], [], []],
 ];

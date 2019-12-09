@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ season.number }}{% endblock %}
+
+{% block body %}
+    <p> Saison {{ season.number }} </p>
+    {% for episode in episodes %}
+        <h1>
+{#
+            <a href="{{ path('wild_show_program', {'programName': hyphenizedTitles[loop.index - 1] }) }}">
+#}
+                {{ episode.title }}
+{#
+            </a>
+#}
+        </h1>
+        <p> {{ episode.synopsis }}</p>
+    {% endfor %}
+
+    <a href="{{ path('wild_index') }}">
+        Retour à l'accueil
+    </a>
+
+{% endblock %}

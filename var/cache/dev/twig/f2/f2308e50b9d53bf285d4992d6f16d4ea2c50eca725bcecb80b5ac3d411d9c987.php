@@ -106,11 +106,12 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
         // line 11
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 11, $this->source); })()), "category", [], "any", false, false, false, 11), "name", [], "any", false, false, false, 11), "html", null, true);
         echo "</p>
+            lorem
         </div>
     </div>
-
-    <a href=\"";
-        // line 15
+";
+        // line 18
+        echo "    <a href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_index");
         echo "\">
         Retour à l'accueil
@@ -137,7 +138,7 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
 
     public function getDebugInfo()
     {
-        return array (  114 => 15,  107 => 11,  103 => 10,  99 => 9,  92 => 7,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  114 => 18,  107 => 11,  103 => 10,  99 => 9,  92 => 7,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -153,13 +154,17 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
             <h1 class=\"mt-0\">{{ program.title }}</h1>
             <p>{{ program.summary }}</p>
             <p>Categorie : {{ program.category.name }}</p>
+            lorem
         </div>
     </div>
-
+{#    {% for season in seasons %}
+    <p>Saison {{ season.number }}</p>
+    {% endfor %}#}
     <a href=\"{{ path('wild_index') }}\">
         Retour à l'accueil
     </a>
 
-{% endblock %}", "wild/show.html.twig", "/home/sebastien/Documents/Wild_Code_School/Exercices/Symfony_quete/wild-series/templates/wild/show.html.twig");
+{% endblock %}
+", "wild/show.html.twig", "/home/sebastien/Documents/Wild_Code_School/Exercices/Symfony_quete/wild-series/templates/wild/show.html.twig");
     }
 }

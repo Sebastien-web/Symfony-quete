@@ -9,9 +9,12 @@
             <h1 class="mt-0">{{ program.title }}</h1>
             <p>{{ program.summary }}</p>
             <p>Categorie : {{ program.category.name }}</p>
+            lorem
         </div>
     </div>
-
+{#    {% for season in seasons %}
+    <p>Saison {{ season.number }}</p>
+    {% endfor %}#}
     <a href="{{ path('wild_index') }}">
         Retour à l'accueil
     </a>
