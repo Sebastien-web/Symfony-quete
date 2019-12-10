@@ -176,4 +176,25 @@ class WildController extends AbstractController
             'hyphenizedProgramTitle' => $hyphenizedProgramTitle
         ]);
     }
+
+    /**
+     * Shows all categories
+     * @Route("/wild/catlist", name="category_list")
+     * @param CategoryRepository $categoryRepository
+     * @return Response A response instance
+     */
+    public function categories(CategoryRepository $categoryRepository) : Response
+    {
+        $categories = $categoryRepository->findAll();
+
+        if (!$categories) {
+            throw $this->createNotFoundException(
+                'No category found'
+            );
+        }
+
+        return $this->render('wild/categories.html.twig', [
+            'categories' => $categories,
+        ]);
+    }
 }

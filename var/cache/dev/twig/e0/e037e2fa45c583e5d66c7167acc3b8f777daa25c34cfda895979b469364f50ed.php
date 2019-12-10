@@ -76,7 +76,6 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_index");
         echo "\">Catalogue<span class=\"sr-only\">(current)</span></a>
                 </li>
-
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Catégories
@@ -85,7 +84,14 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                         <a class=\"dropdown-item\" href=\"/wild/category/horreur\">Horreur</a>
                         <a class=\"dropdown-item\" href=\"/wild/category/science-fiction\">Science Fiction</a>
                         <div class=\"dropdown-divider\"></div>
-                        <a class=\"dropdown-item\" href=\"#\">What else ?</a>
+                        <a class=\"dropdown-item\" href=\"";
+        // line 24
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_category_list");
+        echo "\">Liste</a>
+                        <a class=\"dropdown-item\" href=\"";
+        // line 25
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("category");
+        echo "\">Ajouter</a>
                     </div>
                 </li>
                 <li class=\"nav-item dropdown\">
@@ -140,7 +146,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
 
     public function getDebugInfo()
     {
-        return array (  114 => 49,  76 => 14,  66 => 6,  47 => 5,  44 => 4,);
+        return array (  120 => 49,  93 => 25,  89 => 24,  76 => 14,  66 => 6,  47 => 5,  44 => 4,);
     }
 
     public function getSourceContext()
@@ -160,7 +166,6 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                 <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"{{ path('wild_index') }}\">Catalogue<span class=\"sr-only\">(current)</span></a>
                 </li>
-
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Catégories
@@ -169,7 +174,8 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                         <a class=\"dropdown-item\" href=\"/wild/category/horreur\">Horreur</a>
                         <a class=\"dropdown-item\" href=\"/wild/category/science-fiction\">Science Fiction</a>
                         <div class=\"dropdown-divider\"></div>
-                        <a class=\"dropdown-item\" href=\"#\">What else ?</a>
+                        <a class=\"dropdown-item\" href=\"{{ path('wild_category_list') }}\">Liste</a>
+                        <a class=\"dropdown-item\" href=\"{{ path('category') }}\">Ajouter</a>
                     </div>
                 </li>
                 <li class=\"nav-item dropdown\">

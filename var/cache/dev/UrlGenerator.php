@@ -15,6 +15,7 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
+    'category' => [[], ['_controller' => 'App\\Controller\\CategoryController::add'], [], [['text', '/category']], [], []],
     'app_index' => [[], ['_controller' => 'App\\Controller\\DefaultController::index'], [], [['text', '/']], [], []],
     'wild_index' => [[], ['_controller' => 'App\\Controller\\WildController::index'], [], [['text', '/wild']], [], []],
     'wild_show' => [['slug'], ['slug' => null, '_controller' => 'App\\Controller\\WildController::show'], ['slug' => '[a-z0-9-]+'], [['variable', '/', '[a-z0-9-]+', 'slug', true], ['text', '/wild/series']], [], []],
@@ -22,4 +23,5 @@ return [
     'wild_show_category' => [['categoryName'], ['categoryName' => null, '_controller' => 'App\\Controller\\WildController::showByCategory'], ['categoryName' => '[a-z0-9-]+'], [['variable', '/', '[a-z0-9-]+', 'categoryName', true], ['text', '/wild/category']], [], []],
     'wild_show_season' => [['seasonId'], ['id' => null, '_controller' => 'App\\Controller\\WildController::showBySeason'], ['seasonId' => '[0-9]+'], [['variable', '/', '[0-9]+', 'seasonId', true], ['text', '/wild/season']], [], []],
     'wild_show_episode' => [['id'], ['_controller' => 'App\\Controller\\WildController::showByEpisode'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/wild/wild/episode']], [], []],
+    'wild_category_list' => [[], ['_controller' => 'App\\Controller\\WildController::categories'], [], [['text', '/wild/wild/catlist']], [], []],
 ];

@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ form_start(categoryForm) }}
+{#    {{ form_row(categoryForm.name) }}#}
+    {{ form_widget(categoryForm) }}
+<button type="submit" >Valider</button>
+{{ form_end(categoryForm) }}
+{% endblock %}
