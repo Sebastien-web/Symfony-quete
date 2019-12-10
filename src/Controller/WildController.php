@@ -3,6 +3,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Episode;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -158,4 +159,21 @@ class WildController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/wild/episode/{id}", name="show_episode")
+     * @param Episode $episode
+     * @return Response
+     */
+    public function showByEpisode(Episode $episode):Response
+    {
+        $season = $episode->getSeason();
+        $program = $season->getProgram();
+        $hyphenizedProgramTitle = strtolower(str_replace(' ', '-', $program->getTitle()));
+        return $this->render('wild/episode.html.twig', [
+            'episode' => $episode,
+            'season' => $season,
+            'program' => $program,
+            'hyphenizedProgramTitle' => $hyphenizedProgramTitle
+        ]);
+    }
 }

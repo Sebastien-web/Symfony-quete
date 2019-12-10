@@ -74,7 +74,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                     <a class=\"nav-link\" href=\"";
         // line 14
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_index");
-        echo "\">Series<span class=\"sr-only\">(current)</span></a>
+        echo "\">Catalogue<span class=\"sr-only\">(current)</span></a>
                 </li>
 
                 <li class=\"nav-item dropdown\">
@@ -106,7 +106,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        Saisons
+                        Arborescence
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                         <a class=\"dropdown-item\" href=\"";
@@ -158,7 +158,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
         <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
             <ul class=\"navbar-nav mr-auto\">
                 <li class=\"nav-item active\">
-                    <a class=\"nav-link\" href=\"{{ path('wild_index') }}\">Series<span class=\"sr-only\">(current)</span></a>
+                    <a class=\"nav-link\" href=\"{{ path('wild_index') }}\">Catalogue<span class=\"sr-only\">(current)</span></a>
                 </li>
 
                 <li class=\"nav-item dropdown\">
@@ -190,7 +190,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        Saisons
+                        Arborescence
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                         <a class=\"dropdown-item\" href=\"{{path('wild_show_program', {programName:'the-twilight-zone'})}}\">The Twilight Zone</a>
