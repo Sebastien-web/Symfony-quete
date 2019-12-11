@@ -20,6 +20,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/wild/category/horreur">Horreur</a>
                         <a class="dropdown-item" href="/wild/category/science-fiction">Science Fiction</a>
+                        <a class="dropdown-item" href="#">Fantasy</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ path('wild_category_list') }}">Liste</a>
                         <a class="dropdown-item" href="{{ path('category') }}">Ajouter</a>
@@ -38,7 +39,7 @@
                         <a class="dropdown-item" href="/wild/series/fear-the-walking-dead">Fear The Walking Dead</a>
                         <a class="dropdown-item" href="/wild/series/the-twilight-zone">The Twilight Zone</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">What else ?</a>
+                        <a class="dropdown-item" href="{{ path('program_index') }}">Gérer les séries</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -49,6 +50,24 @@
                         <a class="dropdown-item" href="{{path('wild_show_program', {programName:'the-twilight-zone'})}}">The Twilight Zone</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">What else ?</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Saisons
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ path('season_index') }}">Gérer les saisons</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Episodes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ path('episode_index') }}">Gérer les épisodes</a>
                     </div>
                 </li>
             </ul>

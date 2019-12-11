@@ -83,13 +83,14 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                         <a class=\"dropdown-item\" href=\"/wild/category/horreur\">Horreur</a>
                         <a class=\"dropdown-item\" href=\"/wild/category/science-fiction\">Science Fiction</a>
+                        <a class=\"dropdown-item\" href=\"#\">Fantasy</a>
                         <div class=\"dropdown-divider\"></div>
                         <a class=\"dropdown-item\" href=\"";
-        // line 24
+        // line 25
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_category_list");
         echo "\">Liste</a>
                         <a class=\"dropdown-item\" href=\"";
-        // line 25
+        // line 26
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("category");
         echo "\">Ajouter</a>
                     </div>
@@ -107,7 +108,10 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                         <a class=\"dropdown-item\" href=\"/wild/series/fear-the-walking-dead\">Fear The Walking Dead</a>
                         <a class=\"dropdown-item\" href=\"/wild/series/the-twilight-zone\">The Twilight Zone</a>
                         <div class=\"dropdown-divider\"></div>
-                        <a class=\"dropdown-item\" href=\"#\">What else ?</a>
+                        <a class=\"dropdown-item\" href=\"";
+        // line 42
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("program_index");
+        echo "\">Gérer les séries</a>
                     </div>
                 </li>
                 <li class=\"nav-item dropdown\">
@@ -116,11 +120,35 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                         <a class=\"dropdown-item\" href=\"";
-        // line 49
+        // line 50
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_show_program", ["programName" => "the-twilight-zone"]);
         echo "\">The Twilight Zone</a>
                         <div class=\"dropdown-divider\"></div>
                         <a class=\"dropdown-item\" href=\"#\">What else ?</a>
+                    </div>
+                </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Saisons
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <div class=\"dropdown-divider\"></div>
+                        <a class=\"dropdown-item\" href=\"";
+        // line 61
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("season_index");
+        echo "\">Gérer les saisons</a>
+                    </div>
+                </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Episodes
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <div class=\"dropdown-divider\"></div>
+                        <a class=\"dropdown-item\" href=\"";
+        // line 70
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("episode_index");
+        echo "\">Gérer les épisodes</a>
                     </div>
                 </li>
             </ul>
@@ -146,7 +174,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
 
     public function getDebugInfo()
     {
-        return array (  120 => 49,  93 => 25,  89 => 24,  76 => 14,  66 => 6,  47 => 5,  44 => 4,);
+        return array (  150 => 70,  138 => 61,  124 => 50,  113 => 42,  94 => 26,  90 => 25,  76 => 14,  66 => 6,  47 => 5,  44 => 4,);
     }
 
     public function getSourceContext()
@@ -173,6 +201,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                         <a class=\"dropdown-item\" href=\"/wild/category/horreur\">Horreur</a>
                         <a class=\"dropdown-item\" href=\"/wild/category/science-fiction\">Science Fiction</a>
+                        <a class=\"dropdown-item\" href=\"#\">Fantasy</a>
                         <div class=\"dropdown-divider\"></div>
                         <a class=\"dropdown-item\" href=\"{{ path('wild_category_list') }}\">Liste</a>
                         <a class=\"dropdown-item\" href=\"{{ path('category') }}\">Ajouter</a>
@@ -191,7 +220,7 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                         <a class=\"dropdown-item\" href=\"/wild/series/fear-the-walking-dead\">Fear The Walking Dead</a>
                         <a class=\"dropdown-item\" href=\"/wild/series/the-twilight-zone\">The Twilight Zone</a>
                         <div class=\"dropdown-divider\"></div>
-                        <a class=\"dropdown-item\" href=\"#\">What else ?</a>
+                        <a class=\"dropdown-item\" href=\"{{ path('program_index') }}\">Gérer les séries</a>
                     </div>
                 </li>
                 <li class=\"nav-item dropdown\">
@@ -202,6 +231,24 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                         <a class=\"dropdown-item\" href=\"{{path('wild_show_program', {programName:'the-twilight-zone'})}}\">The Twilight Zone</a>
                         <div class=\"dropdown-divider\"></div>
                         <a class=\"dropdown-item\" href=\"#\">What else ?</a>
+                    </div>
+                </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Saisons
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <div class=\"dropdown-divider\"></div>
+                        <a class=\"dropdown-item\" href=\"{{ path('season_index') }}\">Gérer les saisons</a>
+                    </div>
+                </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Episodes
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <div class=\"dropdown-divider\"></div>
+                        <a class=\"dropdown-item\" href=\"{{ path('episode_index') }}\">Gérer les épisodes</a>
                     </div>
                 </li>
             </ul>
