@@ -151,6 +151,16 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
         echo "\">Gérer les épisodes</a>
                     </div>
                 </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Acteurs
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"/actor\">Liste complète</a>
+                        <div class=\"dropdown-divider\"></div>
+                        <a class=\"dropdown-item\" href=\"/actor/new\">Gérer les acteurs</a>
+                    </div>
+                </li>
             </ul>
             <form class=\"form-inline my-2 my-lg-0\">
                 <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">
@@ -249,6 +259,16 @@ class __TwigTemplate_74bedfc73d057abd06e9aadd3f34e7dd8eb6d6eeed1c0086ddcb087e32e
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                         <div class=\"dropdown-divider\"></div>
                         <a class=\"dropdown-item\" href=\"{{ path('episode_index') }}\">Gérer les épisodes</a>
+                    </div>
+                </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Acteurs
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"/actor\">Liste complète</a>
+                        <div class=\"dropdown-divider\"></div>
+                        <a class=\"dropdown-item\" href=\"/actor/new\">Gérer les acteurs</a>
                     </div>
                 </li>
             </ul>
